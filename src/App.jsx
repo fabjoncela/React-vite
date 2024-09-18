@@ -7,8 +7,9 @@ import { useState } from 'react';
 function App() {
   return (
     <>
-      <div className="bg-red-500 p-5">
-        <h1 className="text-white">Counters that update separately</h1>
+      <div className="main-div">
+        <h1 className="h1-text">Counters that update separately</h1>
+
         
         <div className='btn1'><MyButton /></div>
         <div className='fabi'>
