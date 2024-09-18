@@ -5,15 +5,18 @@ import { useState } from 'react';
 
 
 function App() {
-return (
+  return (
     <>
-        <div>
-      <h1>Counters that update separately</h1>
-      <MyButton />
-      <MyButton />
-    </div>
+      <div className="bg-red-500 p-5">
+        <h1 className="text-white">Counters that update separately</h1>
+        
+        <div className='btn1'><MyButton /></div>
+        <div className='fabi'>
+          <MyButton />
+        </div>
+      </div>
     </>
-)
+  )
 }
 
 function MyButton() {
