@@ -1,28 +1,31 @@
 
 import './App.css'
 
-const user = {
-  name: 'Hedy Lamarr',
-  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-  imageSize: 90,
-};
+const products = [
+  { title: 'Cabbage', isFruit: false, id: 1 },
+  { title: 'Garlic', isFruit: false, id: 2 },
+  { title: 'Apple', isFruit: true, id: 3 },
+];
 
 function App() {
 
 
-  return (
-    <>
-      <img className="avatar" src={user.imageUrl} alt={'Photo of ' + user.name}
+  const listItems = products.map(product =>
+    <li
+        key={product.id}
         style={{
-          width: user.imageSize,
-          height: user.imageSize
+            color: product.isFruit ? 'magenta' : 'darkgreen'
         }}
-      />
+    >
+        {product.title}
+    </li>
+);
 
-      <h1>{user.name}</h1>
-      <p>Hello there.<br />How do you do?</p>
+return (
+    <>
+        <ul>{listItems}</ul>
     </>
-  )
+)
 }
 
 export default App
