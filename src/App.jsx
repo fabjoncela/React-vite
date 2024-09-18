@@ -9,12 +9,10 @@ function App() {
     <>
       <div className="main-div">
         <h1 className="h1-text">Counters that update separately</h1>
-
-        
-        <div className='btn1'><MyButton /></div>
+        <div className='btn1'>
+          <MyButton /></div>
         <div className='fabi'>
-          <MyButton />
-        </div>
+          <MyButton /></div>
       </div>
     </>
   )
@@ -26,7 +24,6 @@ function MyButton() {
   function handleClick() {
     setCount(count + 1);
   }
-
   return (
     <button onClick={handleClick}>
       Clicked {count} times
