@@ -1,13 +1,15 @@
-import Header from "./Header"
+
 import Card from "./Card.jsx";
+import UserGreeting from "./UserGreeting.jsx";
 
 function App() {
 
 
   return (
     <>
-      <Card />
-      <Card />
+      <UserGreeting isLoggedIn={true} username="Fabi" />
+      <UserGreeting isLoggedIn={false} username="Fabi" />
+      {/* <Card /> */}
 
     </>
   );
