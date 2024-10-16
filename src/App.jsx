@@ -1,3 +1,4 @@
+import Button from "./Button.jsx";
 
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       
+      <Button />
 
     </>
   );
