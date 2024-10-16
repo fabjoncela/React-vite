@@ -8,10 +8,10 @@ function List(props) {
         {item.name}: <b>{item.calories}</b></li>);
 
     return (<><div className="main">
-        <div className="cl1"><h3 className="list-category">{category}</h3></div>
-        <div className="cl2"><ol className="list-items">{listItems}</ol></div>
-
-
+        <div className="wrapper">
+            <h3 className="list-category">{category}</h3>
+            <ol className="list-items">{listItems}</ol>
+        </div>
     </div>
     </>);
 }
